@@ -37,3 +37,9 @@ Pour valider l'égalité, utilisez la méthode "Equals".
 Écrivez la fonction "RechercheSimple" qui prend une liste d'éléments génériques et une fonction lambda de validation d'égalité en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre.
 
 Écrivez la fonction "RechercheDichotomique" qui prend une liste d'éléments génériques, une fonction lambda de validation d'égalité et une fonction lambda de comparaison en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre. La fonction de comparaison renvoie vrai si le premier paramètres est inférieur ou égal au deuxième paramètre.
+
+## Exercice 5 - Méthodes d'extensions
+
+Reprenez la fonction "RechercheSimple" et transformez la en la méthode d'extension "Filtrer". (Version simplifiée du "where")
+
+Écrivez la méthode d'extension "Projeter" qui prend une liste générique en paramètres, une fonction lambda de transformation et qui renvoie une nouvelle liste du type de retour de la fonction lambda. (Version simplifiée du "select")
