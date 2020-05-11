@@ -30,13 +30,13 @@ Pour valider l'égalité, utilisez la méthode "Equals".
 
 ## Exercice 3 - Tri lambda
 
-Écrivez les fonctions "TriABulle" et "TriRapide" qui prennent une liste d'éléments génériques et une fonction lambda de comparaison en paramètres et qui renvoie une nouvelle liste triée. La fonction de comparaison renvoie vrai si le premier paramètres est inférieur ou égal au deuxième paramètre.
+Écrivez les fonctions "TriABulleLambda" et "TriRapideLambda" qui prennent une liste d'éléments génériques et une fonction lambda de comparaison en paramètres et qui renvoie une nouvelle liste triée. La fonction de comparaison renvoie vrai si le premier paramètres est inférieur ou égal au deuxième paramètre.
 
 ## Exercice 4 - Recherche lambda
 
-Écrivez la fonction "RechercheSimple" qui prend une liste d'éléments génériques et une fonction lambda de validation d'égalité en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre.
+Écrivez la fonction "RechercheSimpleLambda" qui prend une liste d'éléments génériques et une fonction lambda de validation d'égalité en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre.
 
-Écrivez la fonction "RechercheDichotomique" qui prend une liste d'éléments génériques, une fonction lambda de validation d'égalité et une fonction lambda de comparaison en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre. La fonction de comparaison renvoie vrai si le premier paramètres est inférieur ou égal au deuxième paramètre.
+Écrivez la fonction "RechercheDichotomiqueLambda" qui prend une liste d'éléments génériques, une fonction lambda de validation d'égalité et une fonction lambda de comparaison en paramètres qui renvoie vrai si l'élément appartient à la liste, faux sinon. La fonction d'égalité renvoie vrai si le premier paramètres est égal au deuxième paramètre. La fonction de comparaison renvoie vrai si le premier paramètres est inférieur ou égal au deuxième paramètre.
 
 ## Exercice 5 - Méthodes d'extensions
 
