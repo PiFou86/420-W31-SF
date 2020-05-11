@@ -11,6 +11,11 @@ namespace AA_Module01_CorrectionPartielle
         #region "Tri à bulles"
         public static List<TypeElement> TriBulles<TypeElement>(List<TypeElement> p_valeurs) where TypeElement : IComparable<TypeElement>
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
             TypeElement ancienneValeur = default(TypeElement);
             bool permutationAuDernierTour = true;
             int indiceMax = p_valeurs.Count - 1;
@@ -39,6 +44,11 @@ namespace AA_Module01_CorrectionPartielle
         #region "Tri rapide"
         public static List<TypeElement> TriRapide<TypeElement>(List<TypeElement> p_valeurs) where TypeElement : IComparable<TypeElement>
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
             List<TypeElement> valeursCopiees = CopierListe(p_valeurs);
 
             TriRapide(valeursCopiees, 0, valeursCopiees.Count - 1);
@@ -46,7 +56,7 @@ namespace AA_Module01_CorrectionPartielle
             return valeursCopiees;
         }
 
-        public static void TriRapide<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier) where TypeElement : IComparable<TypeElement>
+        private static void TriRapide<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier) where TypeElement : IComparable<TypeElement>
         {
             int indicePivot = 0;
             if (p_indicePremier < p_indiceDernier)
@@ -59,12 +69,12 @@ namespace AA_Module01_CorrectionPartielle
         }
 
         // Version simple
-        public static int ChoixPivot<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier)
+        private static int ChoixPivot<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier)
         {
             return p_indicePremier;
         }
 
-        public static int Partitionner<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, int p_indicePivot) where TypeElement : IComparable<TypeElement>
+        private static int Partitionner<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, int p_indicePivot) where TypeElement : IComparable<TypeElement>
         {
             // échange le pivot avec le dernier du tableau , le pivot devient le dernier du tableau 
             TypeElement ancienneValeur = default(TypeElement);
@@ -97,11 +107,21 @@ namespace AA_Module01_CorrectionPartielle
         #region "Fonctions utilitaires"
         public static List<TypeElement> CopierListe<TypeElement>(List<TypeElement> p_valeurs)
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
             return p_valeurs.Select(e => e).ToList();
         }
 
         public static bool EstTrie<TypeElement>(List<TypeElement> p_valeurs) where TypeElement : IComparable<TypeElement>
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
             bool estTrie = true;
             for (int indiceValeur = 0;
                 estTrie && indiceValeur < p_valeurs.Count - 1;
@@ -121,6 +141,16 @@ namespace AA_Module01_CorrectionPartielle
         #region "Tri à bulles"
         public static List<TypeElement> TriBulles<TypeElement>(List<TypeElement> p_valeurs, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
+            if (p_estPlusPetitEgaleA == null)
+            {
+                throw new ArgumentNullException(nameof(p_estPlusPetitEgaleA));
+            }
+
             TypeElement ancienneValeur = default(TypeElement);
             bool permutationAuDernierTour = true;
             int indiceMax = p_valeurs.Count - 1;
@@ -149,6 +179,15 @@ namespace AA_Module01_CorrectionPartielle
         #region "Tri rapide"
         public static List<TypeElement> TriRapide<TypeElement>(List<TypeElement> p_valeurs, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+            if (p_estPlusPetitEgaleA == null)
+            {
+                throw new ArgumentNullException(nameof(p_estPlusPetitEgaleA));
+            }
+
             List<TypeElement> valeursCopiees = CopierListe(p_valeurs);
 
             TriRapide(valeursCopiees, 0, valeursCopiees.Count - 1, p_estPlusPetitEgaleA);
@@ -156,7 +195,7 @@ namespace AA_Module01_CorrectionPartielle
             return valeursCopiees;
         }
 
-        public static void TriRapide<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
+        private static void TriRapide<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
         {
             int indicePivot = 0;
             if (p_indicePremier < p_indiceDernier)
@@ -168,7 +207,7 @@ namespace AA_Module01_CorrectionPartielle
             }
         }
 
-        public static int Partitionner<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, int p_indicePivot, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
+        private static int Partitionner<TypeElement>(List<TypeElement> p_valeurs, int p_indicePremier, int p_indiceDernier, int p_indicePivot, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
         {
             // échange le pivot avec le dernier du tableau , le pivot devient le dernier du tableau 
             TypeElement ancienneValeur = default(TypeElement);
@@ -201,6 +240,16 @@ namespace AA_Module01_CorrectionPartielle
         #region "Fonctions utilitaires"
         public static bool EstTrie<TypeElement>(List<TypeElement> p_valeurs, Func<TypeElement, TypeElement, bool> p_estPlusPetitEgaleA)
         {
+            if (p_valeurs == null)
+            {
+                throw new ArgumentNullException(nameof(p_valeurs));
+            }
+
+            if (p_estPlusPetitEgaleA == null)
+            {
+                throw new ArgumentNullException(nameof(p_estPlusPetitEgaleA));
+            }
+
             bool estTrie = true;
             for (int indiceValeur = 0;
                 estTrie && indiceValeur < p_valeurs.Count - 1;
