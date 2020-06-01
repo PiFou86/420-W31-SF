@@ -14,7 +14,7 @@ Tout au long des l'exercices :
 1. Créez un projet Visual Studio avec le nom "AA_Module03_TableauACapaciteVariable" et de type "Bibliothèque de classes.
 2. Dans la solution associée, ajoutez un projet de tests xUnit avec le nom "TestsAA_Module03_TableauACapaciteVariable" et liez-le au projet précédent.
 3. Ajoutez un autre projet de type "Application console" nommé "AA_Module03_TableauACapaciteVariable_Console" qui contiendra votre "Program.cs".
-4. Créez la classe "TableauCapaciteVariable" qui prend le type d'éléments en paramètres.
+4. Créez la classe "TableauCapaciteVariable" dans la classe "AA_Module03_TableauACapaciteVariable" qui prend le type d'éléments en paramètres.
 5. Indiquez à la classe que vous implantez ```IEnumerable<TypeElement>``` et ```IList<TypeElement>```.
 6. Utilisez les actions rapides pour implanter les interfaces : les méthodes et propriétés contiendront le code :
 
@@ -91,7 +91,7 @@ IEnumerator IEnumerable.GetEnumerator()
 Implantez les données membres, méthodes et propriétés dans l'ordre suivant :
 
 1. m_donnees : tableau de capacité éléments, contient les données de la collection
-2. Capacite_Par_Defaut : entier, contient la capacité par défaut d'une collection
+2. Capacite_Par_Defaut : entier, contient la capacité par défaut d'une collection. La donnée est constante et de valeur 1.
 3. Count (propriété) : entier
    - Get : renvoie le nombre d'éléments de la collection
    - Private set : modifie le nombre d'éléments de la collection
