@@ -27,7 +27,7 @@ namespace AA_Module03_TableauACapaciteVariable
                 TypeElement[] nouvellesDonnees = new TypeElement[value];
                 if (this.Count > 0)
                 {
-                    Array.Copy(this.m_donnees, nouvellesDonnees, this.Count);
+                    Array.Copy(this.m_donnees, 0, nouvellesDonnees, 0, this.Count);
                 }
 
                 this.m_donnees = nouvellesDonnees;
