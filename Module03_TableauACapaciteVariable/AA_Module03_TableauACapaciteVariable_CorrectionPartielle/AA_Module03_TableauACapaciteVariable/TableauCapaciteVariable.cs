@@ -158,6 +158,9 @@ namespace AA_Module03_TableauACapaciteVariable
             }
 
             this.Count--;
+
+            // Pour le garbage collector
+            this.m_donnees[this.Count] = default;
         }
 
         public void Add(TypeElement p_element)
