@@ -27,7 +27,7 @@ Tout au long des l'exercices :
      - Get : renvoie la référence du dernier noeud de la liste
      - Private set : définit la référence du dernier noeud de la liste
 
-7. Dans la classe "ListeChainee", ajoutez les propriétés suivantes :
+7. Dans la classe "NoeudListeChainee", ajoutez les propriétés suivantes :
    1. Suivant
 
      - Get : renvoie la référence du noeud suivant
