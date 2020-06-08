@@ -33,11 +33,6 @@ Tout au long des l'exercices :
      - Get : renvoie la référence du noeud suivant
      - Set : définit la référence du noeud suivant
 
-   2. Precedent
-
-     - Get : renvoie la référence du noeud précédent
-     - Set : définit la référence du noeud précédent
-
    2. Valeur
 
      - Get : renvoie la valeur du noeud courant
