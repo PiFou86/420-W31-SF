@@ -107,7 +107,7 @@ Implantez les données membres, méthodes et propriétés dans l'ordre suivant :
 8. Opérateur crochet (```public TypeElement this[int p_indice]```) :
    - Get : renvoie la valeur présente à l'indice p_indice (si cohérent par rapport au nombre d'éléments)
    - Set : affecte la valeur à l'indice p_indice (si cohérent par rapport au nombre d'éléments)
-9. Add : ajoute un élément à la collection.
+9. Add : ajoute un élément à la fin de la collection.
 10. Insert : insère un élément à la collection. Si l'indice est égal au nombre d'éléments, insérer la valeur à la fin (équivalent à Add).
 11. IndexOf : recherche si une valeur est dans la collection. Renvoie l'indice de la première position trouvée ou -1 si non trouvé. Attention, la valeur recherchée peut être nulle. Dans ce dernier cas, renvoie la première position d'une valeur nulle.
 12. Contains : renvoie vrai si l'élément passé en paramètre est présent dans la liste, faux sinon.
