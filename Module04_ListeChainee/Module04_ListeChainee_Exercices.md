@@ -31,13 +31,18 @@ Tout au long des l'exercices :
    1. Suivant
 
      - Get : renvoie la référence du noeud suivant
-     - Private set : définit la référence du noeud suivant
+     - Set : définit la référence du noeud suivant
 
    2. Precedent
 
      - Get : renvoie la référence du noeud précédent
-     - Private set : définit la référence du noeud précédent
+     - Set : définit la référence du noeud précédent
 
+   2. Valeur
+
+     - Get : renvoie la valeur du noeud courant
+     - Set : définit la valeur du noeud courant
+  
 8. Indiquez à la classe que vous implantez ```IEnumerable<TypeElement>``` et ```IList<TypeElement>```.
 9. Utilisez les actions rapides pour implanter les interfaces : les méthodes et propriétés contiendront le code :
 
