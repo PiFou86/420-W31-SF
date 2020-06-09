@@ -38,7 +38,7 @@ Tout au long des l'exercices :
      - Get : renvoie la valeur du noeud courant
      - Set : définit la valeur du noeud courant
   
-8. Indiquez à la classe que vous implantez ```IEnumerable<TypeElement>``` et ```IList<TypeElement>```.
+8. Indiquez à la classe "ListeChainee" que vous implantez ```IEnumerable<TypeElement>``` et ```IList<TypeElement>```.
 9. Utilisez les actions rapides pour implanter les interfaces : les méthodes et propriétés contiendront le code :
 
    ```csharp
@@ -121,7 +121,7 @@ Implantez les données membres, méthodes et propriétés dans l'ordre suivant :
    - Get : renvoie faux
 3. Constructeurs :
    - ```public ListeChainee()``` : crée une collection vide.
-   - ```public ListeChainee(IEnumerable<TypeElement> p_elements)``` : crée une collection avec comme éléments les mêmes éléments que ceux passés en paramètres. Vous pouvez itérer sur la collection avec "foreach". La capacité et le nombre d'éléments sont égaux au nombre d'éléments passés en paramètres.
+   - ```public ListeChainee(IEnumerable<TypeElement> p_elements)``` : crée une collection avec comme éléments les mêmes éléments que ceux passés en paramètres. Vous pouvez itérer sur la collection avec "foreach". Le nombre d'éléments est égale au nombre d'éléments passés en paramètres.
 4. Opérateur crochet (```public TypeElement this[int p_indice]```) :
    - Get : renvoie la valeur présente à l'indice p_indice (si cohérent par rapport au nombre d'éléments)
    - Set : affecte la valeur à l'indice p_indice (si cohérent par rapport au nombre d'éléments)
@@ -130,7 +130,7 @@ Implantez les données membres, méthodes et propriétés dans l'ordre suivant :
 7. Insert : insère un élément à la collection. Si l'indice est égal au nombre d'éléments, insérer la valeur à la fin (équivalent à Add).
 8. IndexOf : recherche si une valeur est dans la collection. Renvoie l'indice de la première position trouvée ou -1 si non trouvé. Attention, la valeur recherchée peut être nulle. Dans ce dernier cas, renvoie la première position d'une valeur nulle.
 9. Contains : renvoie vrai si l'élément passé en paramètre est présent dans la liste, faux sinon.
-10. Clear : supprime les éléments de la collection. La capacité doit être inchangé. Les éléments de la collection doivent pouvoir être collectés par le ramasse miettes.
+10. Clear : supprime les éléments de la collection. Les éléments de la collection doivent pouvoir être collectés par le ramasse miettes.
 11. RemoveAt : supprime l'élément se trouvant à un indice donné.
 12. Remove : supprimer la première occurrence de l'élément passé en paramètres
 13. CopyTo : copie les éléments de la collection dans le tableau passé en paramètres à partir de l'indice indiqué pour le tableau destination (sert par exemple à concaténer deux collection).
