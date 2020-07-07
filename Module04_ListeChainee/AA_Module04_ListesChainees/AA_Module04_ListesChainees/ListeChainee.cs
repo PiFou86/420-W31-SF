@@ -141,6 +141,12 @@ namespace Module04_ListesChainees
                 {
                     noeudCourant = noeudCourant.Suivant;
                 }
+
+                if (p_indice == this.Count - 1)
+                {
+                    this.DernierNoeud = noeudCourant;
+                }
+
                 noeudCourant.Suivant = noeudCourant.Suivant.Suivant;
             }
 
