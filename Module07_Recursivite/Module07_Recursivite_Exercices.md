@@ -37,7 +37,7 @@ Question 1 : écrivez une fonction récursive qui prend une liste chaînée gén
 
 Question 2 : écrivez une fonction récursive qui prend une liste chaînée générique et qui renvoie la valeur la plus grande.
 
-Question 3 : écrivez une fonction récursive qui prend une liste chaînée générique et une fonction qui ne renvoie rien (Action<TypeElement>) et qui applique la fonction sur chacun des noeuds.
+Question 3 : écrivez une fonction récursive qui prend une liste chaînée générique et une fonction lambda qui ne renvoie rien (Action<TypeElement>) et qui applique la fonction lambda sur chacun des noeuds.
 
 Question 4 : réécrivez une nouvelle version des fonctions NombreDElements et Maximmum en utilisant la fonction de parcours.
 
