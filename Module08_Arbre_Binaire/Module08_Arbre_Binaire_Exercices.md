@@ -26,7 +26,7 @@ Dans la classe « ArbreBinaire », écrivez la méthode « get » de la prop
 
 ## Exercice 4 - Parcours
 
-- À partir de l’algorithme précédent, dans la classe « ArbreBinaire », écrivez les méthodes suivantes :
+- À partir de l’algorithme vu en cours, dans la classe « ArbreBinaire », écrivez les méthodes suivantes :
 
   - ParcoursPrefixe : prend un traitement en paramètre et l’applique sur le nœud courant avant de parcourir ses fils
   - ParcoursInfixe : prend un traitement en paramètre et parcours son fils gauche puis applique le traitement sur le nœud courant et parcours son fils droit
