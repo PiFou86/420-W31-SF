@@ -22,6 +22,9 @@ namespace AA_Module08_ArbreBinaire
             abr.Inserer(15);
             abr.Inserer(23);
             abr.Inserer(42);
+
+            Console.Out.WriteLine(abr.Rechercher(-23));
+            Console.Out.WriteLine(abr.Rechercher(15));
         }
     }
 }

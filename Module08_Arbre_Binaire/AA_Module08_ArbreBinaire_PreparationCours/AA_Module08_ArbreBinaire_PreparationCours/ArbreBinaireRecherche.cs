@@ -85,5 +85,33 @@ namespace AA_Module08_ArbreBinaire
                 }
             }
         }
+
+        public bool Rechercher(TypeElement p_valeur)
+        {
+            return this.Rechercher_rec(p_valeur, this.Racine);
+        }
+
+        private bool Rechercher_rec(TypeElement p_valeur, NoeudArbreBinaire<TypeElement> p_noeud)
+        {
+            if (p_noeud == null)
+            {
+                return false;
+            }
+
+            int compare = p_valeur.CompareTo(p_noeud.Valeur);
+            if (compare == 0)
+            {
+                return true;
+            }
+            else if (compare < 0)
+            {
+                return Rechercher_rec(p_valeur, p_noeud.Gauche);
+            }
+            else
+            {
+                return Rechercher_rec(p_valeur, p_noeud.Droit);
+            }
+
+        }
     }
 }

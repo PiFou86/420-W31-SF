@@ -64,7 +64,7 @@ Question 3 : écrivez une fonction récursive qui permet de filtrer une collecti
 
 Écrivez une fonction de recherche dichotomique récursive qui prend un tableau d'éléments, une fonction lambda en paramètres et qui renvoie l'élément s'il est trouvé, la valeur par défaut sinon :
 
-- La fonction lambda prend une valeur en paramètres et renvoie vrai si c'est la valeur à trouver, faux sinon.
+- La fonction lambda prend une valeur en paramètres et renvoie un entier correspondant à sa position par rapport à la valeur cherchée.
 - Votre fonction privée doit prendre un tableau, les indices de début et de fin du sous-tableau ainsi que la fonction lambda.
 
 ## On se complique la vie pour l'exercice ! (Optionnel)
