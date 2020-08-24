@@ -21,8 +21,7 @@ Dans la nouvelle classe « GenerateurArbreBinaire », écrivez la méthode sta
 
 ## Exercice 3 - Hauteur
 
-Dans la classe « ArbreBinaire », écrivez la méthode « get » de la propriété « Hauteur » qui calcule sa hauteur et la renvoie 
-
+Dans la classe « ArbreBinaire », écrivez la méthode « get » de la propriété « Hauteur » qui calcule sa hauteur et la renvoie.
 
 ## Exercice 4 - Parcours
 
