@@ -127,3 +127,30 @@ static ArbreAutoCompletion Charger(string p_nomFichierDictionnaire)
   - Une autre pour collecter tous les mots valides à partir d’un nœud
 
 Pour ajouter tous les éléments d'une collection dans une autre, vous pouvez utiliser la [méthode "AddRange" de la classe "List"](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.addrange?view=netcore-3.1). Vous pouvez aussi utiliser la [méthode "Concat" de la classe "Enumerable"](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat?view=netcore-3.1).
+
+
+## Exercice 4 - Arbre d'expressions
+
+Dans cet exercice, on se propose d'avoir deux types de noeuds : soit une valeur entière, soit un opérateur binaire de type +, -, *, /. Ici une valeur entière est une feuille et inversement. Les noeuds qui ne sont pas des feuilles sont alors des opérateur binaires.
+
+L'expression "2 + 3 * 4 + 5" peut être représentée avec l'arbre suivant :
+
+```bash
+     +
+    / \
+   +   5
+  / \
+ 2   *
+    / \
+   3   4
+```
+
+- Sur le papier, effectuez un parcours infixe et écrivez le résultat. Avez-vous la même expression ?
+- Proposez une structure afin de représenter un tel arbre
+- Codez votre structure
+- Dans la classe « GenerateurArbreExpression », écrivez la méthode statique « ExempleExpression1 » qui renvoie un arbre d'expressions qui permet de représenter l'expression "2 + 3 * 4 + 5"
+- Dans la classe « GenerateurArbreExpression », écrivez la méthode statique « ExempleExpression2 » qui renvoie un arbre d'expressions qui permet de représenter l'expression "42 * 3 + 17 - 23 / 7"
+- Ajoutez la méthode "Calculer()" dans les classes qui représentent les noeuds. Cette méthode renvoie un entier et ne prend pas de paramètre. Elle se base sur la valeur du noeud pour un entier ou sur l'opération binaire du noeud réalisée sur les fils gauche et droit.
+- La première expression peut être représentée avec la notation préfixe qui est non ambigue : "+ + 2 * 3 4 5"
+- À partir de l'arbre de la deuxième expression, trouvez son écriture en notation préfixe.
+- Écrivez un algorithme qui à partir d'une expression au format préfixe valide, génère l'arbre d'expressions.
