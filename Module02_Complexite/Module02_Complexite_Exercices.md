@@ -15,4 +15,4 @@
 
 1. Écrivez une fonction qui renvoie la valeur minimale d'une liste générique en utilisant CompareTo : utilisez l'algorithme classique qui parcours un fois la liste
 2. Écrivez une fonction qui renvoie la valeur minimale d'une liste générique en utilisant CompareTo : pour cette version, débutez par un tri de la liste. (le minimum est donc le ???ième élément)
-3. Calculez la complexité des algorithmes avec ou dans tri. Lequel est le plus efficace ?
+3. Calculez la complexité des algorithmes avec ou sans tri. Lequel est le plus efficace ?
