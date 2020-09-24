@@ -141,7 +141,7 @@ Mettez une méthode par ligne et donnez la complexité algorithmique dans le mei
 
 |Algorithme|Meilleur des cas|Pire des cas|
 |---|:-:|:-:|
-|NombreElements|O(1)|O(n)|
+|NombreElements|O(1)|O(n)?|
 
 ### Questions en vrac
 
