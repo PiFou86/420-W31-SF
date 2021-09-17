@@ -1,11 +1,11 @@
-﻿using System;
+﻿using System;
 
-namespace Module09_ArbreNAire
+namespace Module09_ArbreNAire
 {
-    public class Arbre<TypeDonnee>
-    {
-        public NoeudArbre<TypeDonnee> Racine { get; protected set; }
+    public class Arbre<TypeDonnee>
+    {
+        public NoeudArbre<TypeDonnee> Racine { get; protected set; }
 
 
-    }
+    }
 }

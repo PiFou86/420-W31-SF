@@ -1,13 +1,13 @@
-﻿using System;
-using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
-namespace AA_Module06_TableHachage_PreparationCours
+namespace AA_Module06_TableHachage_PreparationCours
 {
-    [Serializable]
-    internal class ClefDejaPresenteException : ArgumentException
-    {
-        public ClefDejaPresenteException()
-        {
-        }
-    }
+    [Serializable]
+    internal class ClefDejaPresenteException : ArgumentException
+    {
+        public ClefDejaPresenteException()
+        {
+        }
+    }
 }
