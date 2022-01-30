@@ -115,6 +115,10 @@ static ArbreAutoCompletion Charger(string p_nomFichierDictionnaire)
 ```
 
 </details>
+    
+Exemple d'arbre partiel généré à partir de mots tirés du dictionnaire :
+    
+![Exemple d'arbre partiel généré à partir de mots tirés du dictionnaire](graphviz.svg)
 
 ## Exercice 3 - Compléter un préfixe
 
